@@ -1,0 +1,18 @@
+User Management based on MEAN STACK
+-> Download index.js & package.json
+-> Run 'npm install' in the directory to install dependencies
+
+-> To run the server type : node index.js nameOfDatabase nameOfMongoCollection port
+
+like; node index.js users usersData 6969
+List of RESTful APIs :
+
+1.POST (/signup) : To create the user with the following information: username , password , email , dob , name supplied in the JSON format.
+
+2.POST (/login) : For user login : username & password supplied in JSON format.
+
+3.GET (/users/:userName) : To get user details. Username must be supplied in the URL.
+
+4.POST (/updateInfo) : To update user details. Only name,email and dob can be changed as of now.
+
+5.Uses bcrypt for password hashing.
